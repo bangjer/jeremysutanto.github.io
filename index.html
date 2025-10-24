@@ -10,21 +10,20 @@
     * { box-sizing: border-box; }
     body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); }
     header, main, footer { width: min(100%, var(--w)); margin: 0 auto; padding: 24px; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    h2 { font-size: 1.4rem; margin-top: 40px; margin-bottom: 10px; }
-    h3 { font-size: 1.1rem; margin-bottom: 4px; }
+    h1 { font-size: 2rem; margin-bottom: 6px; }
+    h2 { font-size: 1.35rem; margin-top: 36px; margin-bottom: 10px; }
+    h3 { font-size: 1.05rem; margin-bottom: 2px; }
     p { margin: 6px 0 12px; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .muted { color: var(--muted); }
-    .pill { display:inline-block; padding:6px 14px; border:1px solid #ccc; border-radius:999px; font-size:0.9rem; color:#333; text-decoration:none; margin-top:12px; }
-    hr { border:none; border-top:1px solid #eee; margin:30px 0; }
-    footer { color: var(--muted); font-size:0.95rem; text-align:center; }
+    .pill { display:inline-block; padding:6px 14px; border:1px solid #ccc; border-radius:999px; font-size:0.9rem; color:#333; text-decoration:none; margin-top:8px; }
+    hr { border:none; border-top:1px solid #eee; margin:28px 0; }
+    footer { color: var(--muted); font-size:0.95rem; text-align:center; margin-top:40px; }
     .grid { display:grid; gap:16px; }
-    .card { border:1px solid #eee; border-radius:10px; padding:18px; background:#fafafa; }
-    .thumb { width:100%; border-radius:8px; margin-top:8px; }
+    .card { border:1px solid #eee; border-radius:10px; padding:16px 18px; background:#fafafa; }
     ul { padding-left:18px; margin:6px 0 0; }
-    li + li { margin-top:6px; }
+    li + li { margin-top:5px; }
     @media (prefers-color-scheme: dark) {
       :root { --bg:#0b0b0c; --fg:#e8e8ea; --muted:#a0a0a9; --link:#61a8ff; }
       .pill { border-color:#333; color:#e8e8ea; }
@@ -36,26 +35,28 @@
 <body>
   <header>
     <h1>Jeremy Sutanto</h1>
-    <p class="muted">MSc Business &amp; Finance — University of Warwick</p>
-    <p class="muted">BSc Economics &amp; Finance — University of Leeds (2:1)</p>
-    <!-- FIXED: CV now points to assets/cv.pdf -->
-    <a class="pill" href="assets/Jeremy Sutanto Curriculum Vitae.pdf" target="_blank">Download CV</a>
+    <p>
+      Postgraduate student in <strong>Business and Finance</strong> at the University of Warwick, 
+      with a background in <strong>Economics and Finance</strong> from the University of Leeds.
+    </p>
+    <a class="pill" href="assets/cv.pdf" target="_blank">Download CV</a>
   </header>
 
   <main>
+    <!-- Summary -->
     <section id="summary">
       <h2>Summary</h2>
       <p>
-        Postgraduate student at the <strong>University of Warwick</strong> (Business &amp; Finance) with a BSc in 
-        <strong>Economics &amp; Finance</strong> from the University of Leeds. Interests in <strong>equity research</strong>, 
-        <strong>macroeconomics</strong>, and <strong>digital assets</strong>. I enjoy translating complex market ideas 
-        into practical insights and educational content.
+        I am passionate about <strong>equity research</strong>, <strong>macroeconomic analysis</strong>, and 
+        the growing influence of <strong>digital assets</strong> on global markets. My experience spans corporate 
+        finance, treasury, and financial modeling, complemented by initiatives in financial education 
+        through <a href="https://x.com/MinuteFinanceUK" target="_blank">MinuteFinance</a>.
       </p>
     </section>
 
     <hr>
 
-    <!-- Projects & Societies FIRST -->
+    <!-- Projects & Societies -->
     <section id="projects">
       <h2>Projects &amp; Societies</h2>
 
@@ -63,20 +64,17 @@
         <div class="card">
           <h3>MinuteFinance — Founder</h3>
           <p class="muted">Nov 2023 – Present</p>
-          <p>Finance education initiative delivering concise insights on equities, credit, and macro trends.</p>
+          <p>Finance education platform simplifying market, risk, and macro concepts for young professionals.</p>
           <p>
             <a href="https://x.com/MinuteFinanceUK" target="_blank">Twitter/X</a> ·
             <a href="https://www.instagram.com/minutefinance.uk/" target="_blank">Instagram</a>
           </p>
-          <!-- Add your own image later: assets/minutefinance.jpg -->
-          <img class="thumb" src="assets/minutefinance.jpg" alt="MinuteFinance" onerror="this.style.display='none'">
         </div>
 
         <div class="card">
           <h3>Leeds Trading &amp; Investment Society — Financial Analyst</h3>
           <p class="muted">Nov 2022 – Sep 2023</p>
-          <p>Researched equities and credit, collaborated on ideas, and presented market outlooks to the society.</p>
-          <img class="thumb" src="assets/ltis.jpg" alt="Leeds Trading & Investment Society" onerror="this.style.display='none'">
+          <p>Conducted equity and credit analysis using Bloomberg Terminal, contributing to research reports and group discussions.</p>
         </div>
       </div>
     </section>
@@ -91,78 +89,44 @@
           <h3>Federal International Finance (FIF Group)</h3>
           <p class="muted">Treasury &amp; Funding Intern · Jakarta, ID · Jun 2024 – Sep 2024</p>
           <ul>
-            <li>Supported IDR 2.5T corporate bond issuance and regulatory workflows.</li>
-            <li>Built/automated Excel templates for treasury reporting and deadlines.</li>
+            <li>Supported an IDR 2.5T corporate bond issuance, ensuring regulatory compliance.</li>
+            <li>Automated internal reporting frameworks, improving efficiency and accuracy.</li>
           </ul>
-          <img class="thumb" src="assets/fif.jpg" alt="FIF Group" onerror="this.style.display='none'">
         </div>
 
         <div class="card">
           <h3>Samudra Utama Narapati (SUN)</h3>
           <p class="muted">Finance Intern · Jakarta, ID · Jun 2023 – Aug 2023</p>
           <ul>
-            <li>Processed daily transactions and assisted liquidity/credit exposure tracking.</li>
-            <li>Built a forecasting model to support treasury risk assessments.</li>
+            <li>Processed daily financial transactions and assisted in liquidity monitoring.</li>
+            <li>Developed forecasting models supporting credit exposure analysis.</li>
           </ul>
-          <img class="thumb" src="assets/sun.jpg" alt="Samudra Utama Narapati" onerror="this.style.display='none'">
         </div>
 
         <div class="card">
           <h3>Pelangi Dwiputra Kimiaraya (PDK)</h3>
           <p class="muted">Accounting Intern · Jakarta, ID · Jun 2022 – Sep 2022</p>
           <ul>
-            <li>Prepared weekly P&amp;L and balance sheets, supporting management reporting.</li>
-            <li>Assisted with trade receivables/payables and tax compliance tasks.</li>
+            <li>Prepared weekly profit &amp; loss and balance sheets for management reporting.</li>
+            <li>Supported corporate tax compliance and trade receivable documentation.</li>
           </ul>
-          <img class="thumb" src="assets/pdk.jpg" alt="Pelangi Dwiputra Kimiaraya" onerror="this.style.display='none'">
         </div>
       </div>
     </section>
 
     <hr>
 
-    <!-- Certifications: all OPEN LOCAL FILES -->
+    <!-- Compact Certifications -->
     <section id="certifications">
       <h2>Certifications</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Bloomberg Market Concepts (BMC)</h3>
-          <a href="assets/cert-bloomberg-bmc.png" target="_blank">
-            <img class="thumb" src="assets/cert-bloomberg-bmc.png" alt="Bloomberg Market Concepts">
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Bloomberg ESG Certificate</h3>
-          <a href="assets/cert-bloomberg-esg.png" target="_blank">
-            <img class="thumb" src="assets/cert-bloomberg-esg.png" alt="Bloomberg ESG">
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Microsoft Office Specialist: Excel Associate</h3>
-          <p class="muted">Mar 2024</p>
-          <a href="assets/cert-excel-associate.pdf" target="_blank">View PDF</a>
-          <a href="assets/cert-excel-associate.png" target="_blank">
-            <img class="thumb" src="assets/cert-excel-associate.png" alt="Excel Associate">
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>M&amp;A Finance Accelerator — AmplifyME (Top Performer)</h3>
-          <a href="assets/cert-amplifyme.pdf" target="_blank">View PDF</a>
-        </div>
-
-        <div class="card">
-          <h3>Blockchain &amp; Cryptocurrency Explained</h3>
-          <a href="assets/cert-coursera-blockchain.pdf" target="_blank">View PDF</a>
-        </div>
-
-        <div class="card">
-          <h3>Decentralized Finance (DeFi) Infrastructure</h3>
-          <a href="assets/cert-coursera-defi.pdf" target="_blank">View PDF</a>
-        </div>
-      </div>
+      <ul>
+        <li><strong>Bloomberg Market Concepts (BMC)</strong> — Bloomberg LP</li>
+        <li><strong>Bloomberg ESG &amp; Sustainable Investing</strong> — Bloomberg LP</li>
+        <li><strong>Microsoft Office Specialist: Excel Associate</strong> — Microsoft 365 Apps</li>
+        <li><strong>Mergers &amp; Acquisitions Finance Accelerator</strong> — AmplifyME x UBS</li>
+        <li><strong>Blockchain &amp; Cryptocurrency Explained</strong> — University of Michigan (Coursera)</li>
+        <li><strong>Python for Finance</strong> — Coursera</li>
+      </ul>
     </section>
 
     <hr>
