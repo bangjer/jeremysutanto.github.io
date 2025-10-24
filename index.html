@@ -46,6 +46,33 @@
       padding: 3px;
     }
 
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 14px;
+    }
+    .gallery-card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+      padding: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    .gallery-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;  /* tidy tiles */
+      object-fit: cover;     /* neat crop within tile; change to 'contain' if you prefer zero crop */
+      border-radius: 8px;
+      display: block;
+    }
+    .gallery-cap {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 6px;
+      text-align: center;
+    }
+
     @media (max-width: 640px) {
       .header-wrap {
         grid-template-columns: 1fr;
@@ -53,6 +80,9 @@
       .headshot-right {
         width: 130px;
         justify-self: start;
+      }
+      .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       }
     }
 
@@ -62,6 +92,7 @@
       .card { background:#141415; border-color:#222; }
       hr { border-top-color:#222; }
       .headshot-right { border-color:#333; background:#121214; }
+      .gallery-card { background:#141415; border-color:#222; }
     }
   </style>
 </head>
@@ -156,6 +187,40 @@
             <li>Supported corporate tax compliance and trade receivable documentation.</li>
           </ul>
         </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Gallery (Experiences) -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p class="muted">Snapshots from professional experiences, events, and internships.</p>
+      <div class="gallery-grid">
+        <figure class="gallery-card">
+          <img src="gallery/fif3.jpg" alt="FIF Group team photo 3" class="gallery-img">
+          <figcaption class="gallery-cap">FIF Group — Team</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="gallery/fif2.JPG" alt="FIF Group team photo 2" class="gallery-img">
+          <figcaption class="gallery-cap">FIF Group — Event</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="gallery/fif1.jpg" alt="FIF Group team photo 1" class="gallery-img">
+          <figcaption class="gallery-cap">FIF Group — Office</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="gallery/hsbc1.jpeg" alt="HSBC event" class="gallery-img">
+          <figcaption class="gallery-cap">HSBC — Event</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="gallery/pdk1.jpg" alt="PDK internship group photo" class="gallery-img">
+          <figcaption class="gallery-cap">PDK — Internship</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="gallery/msm1.jpeg" alt="MSM event photo" class="gallery-img">
+          <figcaption class="gallery-cap">MSM — Event</figcaption>
+        </figure>
       </div>
     </section>
 
