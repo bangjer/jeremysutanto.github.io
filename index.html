@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jeremy Sutanto — Economics & Finance</title>
-  <meta name="description" content="Jeremy Sutanto | Economics & Finance — University of Leeds and University of Warwick." />
+  <title>Jeremy Sutanto — Portfolio</title>
+  <meta name="description" content="Jeremy Sutanto | MSc Business & Finance (Warwick) | BSc Economics & Finance (Leeds)" />
   <style>
     :root { --w: 860px; --fg:#111; --muted:#666; --link:#0a66c2; --bg:#fff; }
     * { box-sizing: border-box; }
     body { margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--fg); background: var(--bg); }
     header, main, footer { width: min(100%, var(--w)); margin: 0 auto; padding: 24px; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
-    h2 { font-size: 1.35rem; margin-top: 28px; }
-    p { margin: 8px 0 14px; }
+    h2 { font-size: 1.4rem; margin-top: 40px; margin-bottom: 10px; }
+    h3 { font-size: 1.1rem; margin-bottom: 4px; }
+    p { margin: 6px 0 12px; }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .muted { color: var(--muted); }
     .pill { display:inline-block; padding:6px 14px; border:1px solid #ccc; border-radius:999px; font-size:0.9rem; color:#333; text-decoration:none; margin-top:12px; }
     hr { border:none; border-top:1px solid #eee; margin:30px 0; }
     footer { color: var(--muted); font-size:0.95rem; text-align:center; }
+    .grid { display: grid; gap: 16px; }
+    .card { border:1px solid #eee; border-radius:10px; padding:18px; background:#fafafa; }
+    img { width:100%; border-radius:8px; margin-top:8px; }
     @media (prefers-color-scheme: dark) {
       :root { --bg:#0b0b0c; --fg:#e8e8ea; --muted:#a0a0a9; --link:#61a8ff; }
       .pill { border-color:#333; color:#e8e8ea; }
+      .card { background:#141415; border-color:#222; }
       hr { border-top-color:#222; }
     }
   </style>
@@ -29,34 +34,130 @@
 <body>
   <header>
     <h1>Jeremy Sutanto</h1>
-    <p class="muted">Undergraduate in Economics &amp; Finance — University of Leeds</p>
-    <p class="muted">Master’s in Business &amp; Finance — University of Warwick</p>
+    <p class="muted">MSc Business &amp; Finance — University of Warwick</p>
+    <p class="muted">BSc Economics &amp; Finance — University of Leeds (2:1)</p>
+    <a class="pill" href="assets/CV.pdf">Download CV</a>
   </header>
 
   <main>
-    <section id="intro">
+
+    <!-- Resume / Summary -->
+    <section id="cv">
+      <h2>Professional Summary</h2>
       <p>
-        I am currently pursuing a Master’s degree in <strong>Business and Finance</strong> at the University of Warwick, 
-        following my undergraduate studies in <strong>Economics and Finance</strong> at the University of Leeds.
+        I am a postgraduate student at the <strong>University of Warwick</strong> pursuing an MSc in Business and Finance, 
+        with a background in Economics and Finance from the <strong>University of Leeds</strong>. 
+        My professional interests lie in <strong>equity research</strong>, <strong>macroeconomics</strong>, and 
+        <strong>digital assets</strong>, combining fundamental analysis with data-driven insights. 
       </p>
       <p>
-        My academic and professional interests lie in <strong>equity research</strong>, <strong>macroeconomics</strong>, 
-        and the evolving landscape of <strong>cryptocurrency and digital assets</strong>. 
-        I am passionate about exploring how financial markets respond to global economic trends and technological innovation.
-      </p>
-      <p>
-        You can contact me at <a href="mailto:jeremysutanto01@gmail.com">jeremysutanto01@gmail.com</a>.
-      </p>
-      <a class="pill" href="assets/CV.pdf">Download CV</a>
-      <hr>
-      <p class="muted">
-        © <span id="y"></span> Jeremy Sutanto · Hosted on GitHub Pages
+        I have hands-on experience in <strong>corporate treasury and funding operations</strong>, 
+        <strong>financial modeling</strong>, and <strong>credit market analysis</strong>, 
+        and I’m passionate about simplifying complex market concepts through educational initiatives like 
+        <a href="https://x.com/MinuteFinanceUK" target="_blank">MinuteFinance</a>.
       </p>
     </section>
+
+    <hr>
+
+    <!-- Projects / Portfolio -->
+    <section id="projects">
+      <h2>Projects &amp; Portfolio</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Federal International Finance (FIF Group) — Treasury &amp; Funding Intern</h3>
+          <p class="muted">Jakarta, Indonesia | Jun 2024 – Sep 2024</p>
+          <ul>
+            <li>Supported execution of an IDR 2.5 trillion corporate bond issuance ensuring regulatory compliance.</li>
+            <li>Developed automated Excel frameworks that improved reporting efficiency and workflow accuracy.</li>
+            <li>Coordinated data requests with multiple institutional lenders and stakeholders.</li>
+          </ul>
+          <img src="assets/fif-project.jpg" alt="Federal International Finance Internship Project" />
+        </div>
+
+        <div class="card">
+          <h3>MinuteFinance — Founder</h3>
+          <p class="muted">Leeds, UK | Nov 2023 – Present</p>
+          <p>
+            A finance education initiative focused on delivering accessible market insights to young professionals and students. 
+            Content covers equity markets, credit trends, and macroeconomic developments.
+          </p>
+          <p>
+            Follow MinuteFinance: 
+            <a href="https://x.com/MinuteFinanceUK" target="_blank">Twitter/X</a> · 
+            <a href="https://www.instagram.com/minutefinance.uk/" target="_blank">Instagram</a>
+          </p>
+          <img src="assets/minutefinance.jpg" alt="MinuteFinance Social Media" />
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Bloomberg Market Concepts (BMC)</h3>
+          <p class="muted">Bloomberg LP</p>
+          <img src="assets/bloomberg-market.png" alt="Bloomberg Market Concepts Certificate" />
+        </div>
+        <div class="card">
+          <h3>Bloomberg ESG Certificate</h3>
+          <p class="muted">Bloomberg LP</p>
+          <img src="assets/bloomberg-esg.png" alt="Bloomberg ESG Certificate" />
+        </div>
+        <div class="card">
+          <h3>Microsoft Office Specialist: Excel Associate</h3>
+          <p class="muted">Microsoft 365 Apps | Mar 2024</p>
+          <img src="assets/excel-associate.png" alt="Excel Associate Certificate" />
+        </div>
+        <div class="card">
+          <h3>Mergers &amp; Acquisitions Finance Accelerator</h3>
+          <p class="muted">AmplifyME in partnership with UBS | Top Performer</p>
+          <img src="assets/amplifyme.png" alt="M&A Finance Accelerator Certificate" />
+        </div>
+        <div class="card">
+          <h3>Blockchain and Cryptocurrency Explained</h3>
+          <p class="muted">University of Michigan (Coursera)</p>
+          <a href="https://coursera.org/verify/768WMZNY3VFC" target="_blank">View Certificate</a>
+        </div>
+        <div class="card">
+          <h3>Decentralized Finance (DeFi) Infrastructure</h3>
+          <p class="muted">Duke University (Coursera)</p>
+          <a href="https://coursera.org/verify/XMSSGAAVNVHQ" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of Warwick</strong> — MSc Business &amp; Finance (Expected Distinction)</li>
+        <li><strong>University of Leeds</strong> — BSc Economics &amp; Finance (2:1 Honours)</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jeremysuta@gmail.com">jeremysuta@gmail.com</a></p>
+      <p>Phone: <a href="tel:+447930145813">+44 7930 145813</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jeremy-sutanto-83b677255/" target="_blank">jeremy-sutanto</a></p>
+    </section>
+
   </main>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    © <span id="y"></span> Jeremy Sutanto · Hosted on GitHub Pages
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
