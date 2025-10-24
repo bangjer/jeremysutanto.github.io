@@ -24,36 +24,63 @@
     .card { border:1px solid #eee; border-radius:10px; padding:16px 18px; background:#fafafa; }
     ul { padding-left:18px; margin:6px 0 0; }
     li + li { margin-top:5px; }
+
+    /* Header layout: text left, photo right */
+    .header-wrap {
+      display: grid;
+      grid-template-columns: 1fr 160px; /* text | photo */
+      align-items: start;
+      gap: 18px;
+    }
+    .headshot-right {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 0;            /* square (no circle) */
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    @media (max-width: 640px) {
+      .header-wrap {
+        grid-template-columns: 1fr;   /* stack on small screens */
+      }
+      .headshot-right {
+        width: 120px;
+        height: 120px;
+        justify-self: start;          /* photo below text, aligned left on mobile */
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
       :root { --bg:#0b0b0c; --fg:#e8e8ea; --muted:#a0a0a9; --link:#61a8ff; }
       .pill { border-color:#333; color:#e8e8ea; }
       .card { background:#141415; border-color:#222; }
       hr { border-top-color:#222; }
-    }
-    /* --- New: Headshot styling --- */
-    .headshot {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #ddd;
-      display: block;
-      margin: 0 auto 14px auto;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      .headshot-right { border-color:#333; }
     }
   </style>
 </head>
 <body>
-  <header style="text-align:center;">
-    <!-- Add your photo here -->
-    <img src="gallery/headshot 2.jpg" alt="Jeremy Sutanto Headshot" class="headshot" onerror="this.style.display='none'">
+  <header>
+    <div class="header-wrap">
+      <div>
+        <h1>Jeremy Sutanto</h1>
+        <p>
+          Postgraduate student in <strong>Business and Finance</strong> at the University of Warwick, 
+          with a background in <strong>Economics and Finance</strong> from the University of Leeds.
+        </p>
+        <!-- CV: exact filename with spaces; URL-encoded in the href -->
+        <a class="pill" href="assets/jeremy%20sutanto%20curriculum%20vitae.pdf" target="_blank">See my CV</a>
+      </div>
 
-    <h1>Jeremy Sutanto</h1>
-    <p>
-      Postgraduate student in <strong>Business and Finance</strong> at the University of Warwick, 
-      with a background in <strong>Economics and Finance</strong> from the University of Leeds.
-    </p>
-    <a class="pill" href="assets/Jeremy Sutanto Curriculum Vitae.pdf" target="_blank">Download CV</a>
+      <!-- Photo on the right; exact filename with spaces; URL-encoded in the src -->
+      <img
+        src="gallery/headshot%202.jpg"
+        alt="Jeremy Sutanto headshot"
+        class="headshot-right"
+        onerror="this.style.display='none'">
+    </div>
   </header>
 
   <main>
@@ -73,6 +100,7 @@
     <!-- Projects & Societies -->
     <section id="projects">
       <h2>Projects &amp; Societies</h2>
+
       <div class="grid">
         <div class="card">
           <h3>MinuteFinance — Founder</h3>
