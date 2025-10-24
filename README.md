@@ -31,8 +31,8 @@
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p class="muted">Economics &amp; Finance — research, teaching, and notes.</p>
+    <h1>Jeremy Sutanto</h1>
+    <p class="muted">Economics &amp; Finance — University of Leeds.</p>
     <nav>
       <a href="#jmp">Job Market Paper</a>
       <a href="#working-papers">Working Papers</a>
